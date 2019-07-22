@@ -5,6 +5,10 @@ require_relative 'hollywood'
 # edit this file.
 
 class HollywoodTest < Minitest::Test
+  def self.test_order
+    :sorted
+  end
+
   def setup
     @groundhog_day = Movie.new('Groundhog Day', 1993)
 
@@ -26,6 +30,9 @@ class HollywoodTest < Minitest::Test
   def test_bills_character
     assert_equal 'Phil Connors', @bills_character.name
     assert_equal 'male', @bills_character.sex
+    # If you have trouble getting this next line running,
+    # read hint 1 in the hollywood.rb file. But try it on your
+    # own first :-)
     assert_equal 'Bill Murray', @bills_character.actor.name
     # we dont test Andie's character (but we could!)
   end

@@ -37,6 +37,16 @@
 # You need to put code into theses classes so that test file passes.
 # In order figure out "what" you need to code, try to follow the error messages from the test runs.
 # In this way you'll solve the excercise little by little.
+# 
+# ********** HINTS **************
+# 
+# Hint 1:
+#
+# If you have trouble with this line:
+# 
+# assert_equal 'Bill Murray', @bills_character.actor.name
+#
+# try to think of what @bills_character.actor should return.
 #
 
 class Actor
